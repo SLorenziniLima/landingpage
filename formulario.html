@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de contato</title>
+    <link rel="shortcut icon" href="../Desafio landing page/img/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="cabecalho">
+                <img src="../Desafio landing page/img/—Pngtree—cartoon flame logo design free_2951394.png"
+                    alt="logotipo da empresa" width="150px">
+                <nav>
+                    <a class="botao"> Início </a>
+                    <a class="contato"> Contato </a>
+                    <a class="somos"> Quem somos </a>
+                    <a class="mensagem"> Nossa missão </a>
+
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulário de cadastro</h2>
+            <h1>Preencha os dados abaixo e envie sua mensagem de contato </h1>
+
+            <fieldset>
+                <div class="formul">
+                    <legend>
+                        <h5>Dados para contato</h5>
+                    </legend>
+                    <form id="frminscricao" action="contato.php" method="POST">
+
+                        <label class="nome" for="#">Nome</label><br>
+                        <input type="text" required="requeried" id="txtName" maxlength="100" size="50"> <br><br>
+
+                        <label for="#">Sexo</label><br>
+                        <input type="radio" name="rdsexo" value="M" required="requeried">
+                        <label for="#">Masculino</label>
+                        <br><br>
+                        <option value="">Selecione</option>
+                        <option value="1">SC</option>
+                        <option value="2">MG</option>
+                        <option value="3">SP</option>
+                        <option value="4">RJ</option>
+                        <option value="5">BA</option>
+                        <option value="6">MA</option>
+                        <option value="7">PA</option>
+                        <option value="8">GO</option>
+                        <option value="9">RS</option>
+
+                        </select> <br><br>
+
+                        <label for="#"> Cidade </label><br>
+                        <select id="cbxCidade" required="requeried">
+                            <option value="">Selecione</option>
+                            <option value="1">Florianópolis</option>
+                            <option value="2">Belo Horizonte</option>
+                            <option value="3">Santo André</option>
+                            <option value="4">Buzios</option>
+                            <option value="5">Salvador</option>
+                            <option value="6">Santarém</option>
+                            <option value="7">Belém</option>
+                            <option value="8">Caldas Novas</option>
+                            <option value="9">Caxias do Sul</option>
+
+                        </select> <br><br>
+
+                        <label>Celular:</label><br>
+                        <input type="tel" required="required" id="txtCelular" size="50" placeholder="(##) #####-####"
+                            maxlength="15"><br><br>
+
+                        <label>E-mail:</label><br>
+                        <input type="email" required="required" size="50"
+                        id="txtEmail"><br><br>
+                        <label>Áreas de Interesse:</label><br>
+                        <input type="checkbox" value="HTML" name="chkAreasInteresse">
+                        <label>HTML</label>
+                        <input type="checkbox" value="CSS" name="chkAreasInteresse">
+                        <label>CSS</label>
+                        <input type="checkbox" value="JavaScript" name="chkAreasInteresse">
+                        <label>JavaScript</label><br><br>
+                        <label>Mensagem:</label><br><br>
+                        <textarea cols="50" rows="5" required="required">
+                        </textarea><br><br>
+                        <input class="btnenviar" id="btnEnviar" type="submit" value="Enviar" />
+                    </form>
+            </fieldset>|
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="redes">
+
+            <img src="../Desafio landing page/img/twitter.png" alt="rede social twitter" width="50px">
+
+            <img src="../Desafio landing page/img/facebook.png" alt="rede facebook" width="50px">
+
+            <img src="../Desafio landing page/img/linkedin.png" alt="rede linkedin" width="50px">
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
